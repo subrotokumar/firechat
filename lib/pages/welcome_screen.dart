@@ -56,15 +56,16 @@ class _WelcomeScreenState extends State<WelcomeScreen>
                   tag: 'logo',
                   child: SizedBox(
                     height: 60.0,
-                    child: Image.asset('assets/images/logo.png'),
+                    child: Image.asset('assets/meta/launcher_logo.png'),
                   ),
                 ),
+                const SizedBox(width: 20),
                 SizedBox(
                   width: 220,
                   child: TextLiquidFill(
                     text: 'Flash Chat',
                     waveDuration: const Duration(seconds: 5),
-                    waveColor: Colors.red,
+                    waveColor: Colors.teal,
                     boxBackgroundColor: Colors.white,
                     boxHeight: 80,
                     textStyle: const TextStyle(
@@ -78,14 +79,14 @@ class _WelcomeScreenState extends State<WelcomeScreen>
             ),
             RoundedButton(
               title: 'Sign In',
-              colour: Colors.lightBlueAccent,
+              colour: Colors.teal[300],
               onPressed: () {
                 Navigator.pushNamed(context, LoginScreen.route);
               },
             ),
             RoundedButton(
-              title: 'Register',
-              colour: Colors.lightBlueAccent,
+              title: 'Create an account',
+              colour: Colors.teal[300],
               onPressed: () {
                 Navigator.pushNamed(context, RegistrationScreen.route);
               },

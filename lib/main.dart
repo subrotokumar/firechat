@@ -24,7 +24,7 @@ class FlashChat extends StatelessWidget {
       theme: ThemeData(useMaterial3: true),
       initialRoute: WelcomeScreen.route,
       routes: {
-        ChatScreen.route: (context) => ChatScreen(),
+        ChatScreen.route: (context) => const ChatScreen(),
         LoginScreen.route: (context) => LoginScreen(),
         RegistrationScreen.route: (context) => RegistrationScreen(),
         WelcomeScreen.route: (context) => const WelcomeScreen(),

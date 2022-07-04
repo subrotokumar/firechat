@@ -44,7 +44,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
               tag: 'logo',
               child: SizedBox(
                 height: 200.0,
-                child: Image.asset('assets/images/logo.png'),
+                child: Image.asset('assets/meta/launcher_logo.png'),
               ),
             ),
             const SizedBox(
@@ -70,7 +70,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
             ),
             RoundedButton(
               title: 'Sign up',
-              colour: Colors.blue,
+              colour: Colors.teal[300],
               onPressed: () async {
                 await FirebaseAuth.instance
                     .createUserWithEmailAndPassword(
@@ -91,7 +91,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                 children: [
                   TextSpan(
                     text: 'Log in',
-                    style: const TextStyle(color: Colors.blue),
+                    style: const TextStyle(color: Colors.teal),
                     recognizer: TapGestureRecognizer()
                       ..onTap = () => Navigator.pushReplacementNamed(
                           context, LoginScreen.route),

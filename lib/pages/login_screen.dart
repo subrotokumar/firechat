@@ -39,7 +39,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 tag: 'logo',
                 child: SizedBox(
                   height: 200.0,
-                  child: Image.asset('assets/images/logo.png'),
+                  child: Image.asset('assets/meta/launcher_logo.png'),
                 ),
               ),
               const SizedBox(
@@ -63,7 +63,7 @@ class _LoginScreenState extends State<LoginScreen> {
               const SizedBox(height: 24.0),
               RoundedButton(
                 title: 'Log in',
-                colour: Colors.blue,
+                colour: Colors.teal[300],
                 onPressed: () async {
                   setState(() {
                     isLoading = true;
@@ -93,7 +93,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   children: [
                     TextSpan(
                       text: 'Sign Up',
-                      style: const TextStyle(color: Colors.blue),
+                      style: const TextStyle(color: Colors.teal),
                       recognizer: TapGestureRecognizer()
                         ..onTap = () => Navigator.pushReplacementNamed(
                             context, RegistrationScreen.route),
