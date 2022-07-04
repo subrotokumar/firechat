@@ -41,9 +41,9 @@ authentication for each user and is built with Cloud Firestore, which is a NoSQL
 
 ## Run Locally
 
-1. Clone the project:  `git clone https://github.com/subrotokumar/cryptobook.git`
+1. Clone the project:  `git clone https://github.com/subrotokumar/flashchat.git`
 
-2. Go to the project directory: `cd cryptobook`
+2. Go to the project directory: `cd flashchat`
 
 3. Install dependencies: `flutter pub get`
 
